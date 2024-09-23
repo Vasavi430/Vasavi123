@@ -1,0 +1,155 @@
+{
+  "advancedSettings": {
+    "loggingSettings": {
+      "disableLogging": true
+    }
+  },
+  "currentFlow": {
+    "displayName": "Default Start Flow",
+    "name": "projects/wise-colledge-gecq/locations/global/agents/a68932c1-247c-4feb-868b-45ab8820cf2b/flows/00000000-0000-0000-0000-000000000000"
+  },
+  "currentPage": {
+    "displayName": "Start Page",
+    "name": "projects/wise-colledge-gecq/locations/global/agents/a68932c1-247c-4feb-868b-45ab8820cf2b/flows/00000000-0000-0000-0000-000000000000/pages/START_PAGE"
+  },
+  "diagnosticInfo": {
+    "Triggered Transition Names": [
+      "e6e5f118-4e9a-4cac-a2a8-ea15e32f6b83"
+    ],
+    "Alternative Matched Intents": [
+      {
+        "Score": 1,
+        "DisplayName": "Default Welcome Intent",
+        "Active": true,
+        "Type": "NLU",
+        "Id": "00000000-0000-0000-0000-000000000000"
+      }
+    ],
+    "Execution Sequence": [
+      {
+        "Step 1": {
+          "Type": "INITIAL_STATE",
+          "InitialState": {
+            "FlowState": {
+              "PageState": {
+                "PageId": "START_PAGE",
+                "Name": "Start Page",
+                "Status": "ENTERING_PAGE"
+              },
+              "Name": "Default Start Flow",
+              "Version": 0,
+              "FlowId": "00000000-0000-0000-0000-000000000000"
+            },
+            "MatchedIntent": {
+              "DisplayName": "Default Welcome Intent",
+              "Type": "NLU",
+              "Score": 1,
+              "Id": "00000000-0000-0000-0000-000000000000",
+              "Active": true
+            }
+          }
+        }
+      },
+      {
+        "Step 2": {
+          "StateMachine": {
+            "FlowLevelTransition": true,
+            "FlowState": {
+              "Name": "Default Start Flow",
+              "PageState": {
+                "PageId": "START_PAGE",
+                "Status": "TRANSITION_ROUTING",
+                "Name": "Start Page"
+              },
+              "FlowId": "00000000-0000-0000-0000-000000000000",
+              "Version": 0
+            },
+            "TriggeredIntent": "Default Welcome Intent",
+            "TriggeredTransitionRouteId": "e6e5f118-4e9a-4cac-a2a8-ea15e32f6b83"
+          },
+          "Type": "STATE_MACHINE",
+          "FunctionExecution": {
+            "Responses": [
+              {
+                "responseType": "HANDLER_PROMPT",
+                "source": "VIRTUAL_AGENT",
+                "text": {
+                  "text": [
+                    "Hi! How are you doing?"
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "Step 3": {
+          "Type": "STATE_MACHINE",
+          "StateMachine": {
+            "FlowState": {
+              "Name": "Default Start Flow",
+              "PageState": {
+                "PageId": "START_PAGE",
+                "Status": "TRANSITION_ROUTING",
+                "Name": "Start Page"
+              },
+              "FlowId": "00000000-0000-0000-0000-000000000000",
+              "Version": 0
+            }
+          }
+        }
+      }
+    ],
+    "Response Id": "430f7f27-a9fd-4e82-91af-7c6e98dd0438",
+    "Session Id": "873310-652-ed9-187-5974195a0"
+  },
+  "generativeInfo": {
+    "actionTracingInfo": {
+      "actions": [
+        {
+          "userUtterance": {
+            "text": "hi"
+          }
+        },
+        {
+          "agentUtterance": {
+            "text": "Hi! How are you doing?"
+          }
+        }
+      ],
+      "conversationState": "OUTPUT_STATE_PENDING",
+      "name": "projects/wise-colledge-gecq/locations/global/agents/a68932c1-247c-4feb-868b-45ab8820cf2b/playbooks/-/examples/-"
+    }
+  },
+  "intent": {
+    "displayName": "Default Welcome Intent",
+    "name": "projects/wise-colledge-gecq/locations/global/agents/a68932c1-247c-4feb-868b-45ab8820cf2b/intents/00000000-0000-0000-0000-000000000000"
+  },
+  "intentDetectionConfidence": 1,
+  "languageCode": "en",
+  "match": {
+    "confidence": 1,
+    "intent": {
+      "displayName": "Default Welcome Intent",
+      "name": "projects/wise-colledge-gecq/locations/global/agents/a68932c1-247c-4feb-868b-45ab8820cf2b/intents/00000000-0000-0000-0000-000000000000"
+    },
+    "matchType": "INTENT",
+    "resolvedInput": "hi"
+  },
+  "responseMessages": [
+    {
+      "responseType": "HANDLER_PROMPT",
+      "source": "VIRTUAL_AGENT",
+      "text": {
+        "redactedText": [
+          "Hi! How are you doing?"
+        ],
+        "text": [
+          "Hi! How are you doing?"
+        ]
+      }
+    }
+  ],
+  "text": "hi"
+}
